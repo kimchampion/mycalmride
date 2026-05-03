@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import svgPaths from '../../../imports/DriverHaloDisplayReports/svg-dmk5nnt6nq';
-import imgHaloTransparentAnimated1 from '../../../imports/DriverHaloDisplayReports/f99c873073d556ec7e6ca215225cb340ac9c5c24.png';
+import haloImage from '../../../imports/halo_transparent_animated.png';
 
 export function DriverHaloDisplayReportsScreen() {
   const navigate = useNavigate();
@@ -82,7 +82,7 @@ export function DriverHaloDisplayReportsScreen() {
             </div>
           )}
           <img
-            src={imgHaloTransparentAnimated1}
+            src={haloImage}
             alt="Halo Effect"
             onLoad={() => setImageLoaded(true)}
             className={`absolute inset-0 w-full h-full object-contain animate-pulse-slow transition-opacity duration-500 ${
@@ -119,7 +119,7 @@ export function DriverHaloDisplayReportsScreen() {
       </div>
 
       {/* End Session Button */}
-      <div className="absolute left-[17px] top-[624px] w-[360px] flex flex-col items-center justify-center min-h-[44px] py-[3px]">
+      <div className="absolute left-[17px] top-[600px] w-[360px] flex flex-col items-center justify-center min-h-[44px] py-[3px]">
         <button
           onClick={handleEndSession}
           className="bg-[#9ab89c] h-[48px] rounded-[16px] w-full"
