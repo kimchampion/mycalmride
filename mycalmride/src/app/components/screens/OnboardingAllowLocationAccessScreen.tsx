@@ -16,7 +16,26 @@ export function OnboardingAllowLocationAccessScreen() {
 
   return (
     <div className="bg-[#042b48] relative min-h-screen w-full overflow-hidden">
-    </div>
+      {/* Status Bar */}
+      <div className="absolute flex flex-col h-[48.881px] items-start left-0 pt-[20.53px] top-0 w-full px-4">
+        <div className="flex items-center justify-between w-full">
+          <div className="flex-1">
+           
+          </div>
+          <div className="h-[9.776px] w-[121.224px]" />
+          <div className="flex-1 flex items-center justify-end gap-[6.843px]">
+            <div className="h-[11.953px] w-[18.77px]">
+          
+            </div>
+            <div className="h-[12.052px] w-[16.758px]">
+        
+            </div>
+            <div className="h-[12.709px] w-[26.716px]">
+             
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Content */}
       <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[329px] flex flex-col items-center pb-[44px]">
