@@ -72,22 +72,30 @@ export function DriverHaloDisplayReportsScreen() {
         </div>
       </div>
 
+
       {/* Halo Image */}
-      <div className="absolute left-[-52.45px] size-[499.932px] top-[175.52px]">
-        {!imageLoaded && (
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-16 h-16 border-4 border-[#7dc4ff] border-t-transparent rounded-full animate-spin" />
-          </div>
-        )}
-        <img
-          alt="Halo Effect"
-          onLoad={() => setImageLoaded(true)}
-          className={`absolute inset-0 max-w-none object-cover pointer-events-none size-full transition-opacity duration-500 ${
-            imageLoaded ? 'opacity-100' : 'opacity-0'
-          }`}
-          src={imgHaloTransparentAnimated1}
-        />
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="relative w-[80vw] h-[80vw] min-w-[500px] min-h-[500px] max-w-[600px] max-h-[600px] sm:w-[70vw] sm:h-[70vw] md:w-[60vw] md:h-[60vw] lg:w-[50vw] lg:h-[50vw]">
+          {!imageLoaded && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-16 h-16 border-4 border-[#7dc4ff] border-t-transparent rounded-full animate-spin" />
+            </div>
+          )}
+          <img
+            src={imgHaloTransparentAnimated1}
+            alt="Halo Effect"
+            onLoad={() => setImageLoaded(true)}
+            className={`absolute inset-0 w-full h-full object-contain animate-pulse-slow transition-opacity duration-500 ${
+              imageLoaded ? 'opacity-100' : 'opacity-0'
+            }`}
+          />
+        </div>
       </div>
+
+
+
+
+      
 
       {/* Bridge coming up text */}
       <p className="absolute left-1/2 -translate-x-1/2 font-['SF_Compact_Text:Semibold',sans-serif] leading-[22px] text-[20px] text-center text-white top-[171.23px] w-[385.351px]">

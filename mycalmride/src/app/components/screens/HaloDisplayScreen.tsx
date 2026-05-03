@@ -117,9 +117,11 @@ export function HaloDisplayScreen() {
 
       {/* Navigation Overlay */}
       <div className="flex-1 flex flex-col items-center justify-center w-full z-10 relative">
-        <p className="text-white/60 text-center text-[20px] font-['SF_Compact_Text:Regular',sans-serif] mb-8">
-          Demo Mode
-        </p>
+
+      <p className="absolute left-1/2 -translate-x-1/2 font-['SF_Compact_Text:Semibold',sans-serif] leading-[22px] text-[20px] text-center text-white top-[171.23px] w-[385.351px]">
+        Demo Mode
+      </p>
+      
 
         <div
           ref={scrollRef}
