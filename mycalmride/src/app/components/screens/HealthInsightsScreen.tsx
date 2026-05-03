@@ -73,7 +73,7 @@ export function HealthInsightsScreen() {
         </button>
       </div>
 
-      <div className="w-[134px] h-[5px] bg-white rounded-full mx-auto" />
+      {/*<div className="w-[134px] h-[5px] bg-white rounded-full mx-auto" /> */}
     </div>
   );
 }

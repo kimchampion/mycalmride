@@ -31,7 +31,7 @@ export function DriverInitializationScreen() {
       </div>
 
       <div className="absolute bottom-8 left-0 right-0">
-        <div className="w-[134px] h-[5px] bg-white rounded-full mx-auto" />
+        {/*<div className="w-[134px] h-[5px] bg-white rounded-full mx-auto" /> */}
       </div>
     </div>
   );
