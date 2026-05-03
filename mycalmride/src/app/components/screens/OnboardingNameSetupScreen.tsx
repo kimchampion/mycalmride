@@ -113,11 +113,6 @@ export function OnboardingNameSetupScreen() {
       <p className="absolute left-1/2 -translate-x-1/2 font-['SF_Compact_Text:Medium',sans-serif] leading-[normal] text-[12px] text-[rgba(255,255,255,0.5)] top-[582px] w-[335px] text-center">
         By continuing you agree to our <span className="text-white underline">terms</span> and <span className="text-white underline">privacy policy</span>
       </p>
-
-      {/* Home Indicator */}
-      <div className="absolute left-0 bottom-0 w-full flex items-end justify-center pb-[7.86px]">
-        <div className="bg-white h-[4.913px] rounded-[100px] w-[141.48px]" />
-      </div>
     </div>
   );
 }

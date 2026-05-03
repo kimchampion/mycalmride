@@ -20,7 +20,7 @@ export function LoadingScreen() {
         <div className="flex flex-col h-[54px] items-start pt-[21px]">
           <div className="flex items-center justify-between w-full">
             <div className="flex-1">
-
+           
             </div>
             <div className="h-[10px] w-[124px]" />
             <div className="flex-1 flex items-center justify-end gap-[7px]">
@@ -53,11 +53,6 @@ export function LoadingScreen() {
         <p className="font-['SF_Compact_Text:Semibold',sans-serif] leading-[22px] text-[#9ab89c] text-[17px]">
           Loading
         </p>
-      </div>
-
-      {/* Home Indicator */}
-      <div className="absolute left-0 bottom-0 w-full flex items-end justify-center pb-[7.86px]">
-        {/* <div className="bg-white h-[4.913px] rounded-[100px] w-[141.48px]" /> */}
       </div>
     </div>
   );

@@ -254,6 +254,10 @@
     transform: translate3d(-30%, 0, 0);
   }
 
+  .safe-top {
+    padding-top: max(env(safe-area-inset-top), 2rem);
+  }
+
   @keyframes slideDown {
     from {
       transform: translate3d(0, 0, 0);

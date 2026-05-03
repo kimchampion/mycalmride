@@ -1,5 +1,5 @@
-import { useNavigate } from 'react-router';
-import svgPaths from '../../../imports/OnboardingWelcome/svg-i9vthu32pr';
+import { useNavigate } from "react-router";
+import svgPaths from "../../../imports/OnboardingWelcome/svg-i9vthu32pr";
 
 export function OnboardingWelcomeScreen() {
   const navigate = useNavigate();
@@ -7,7 +7,6 @@ export function OnboardingWelcomeScreen() {
   return (
     <div className="bg-[#042b48] relative min-h-screen w-full overflow-hidden">
       {/* Status Bar */}
-      
 
       {/* Content */}
       <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[329px] flex flex-col items-center pb-[44px]">
@@ -21,14 +20,15 @@ export function OnboardingWelcomeScreen() {
               Welcome to Your Calm Space
             </p>
             <p className="font-['72:Regular',sans-serif] leading-[22px] text-[17px] text-[#e6edf3] w-[297px]">
-              Calm Ride helps passengers feel more prepared and supported during stressful ride moments.
+              Calm Ride helps passengers feel more prepared and
+              supported during stressful ride moments.
             </p>
           </div>
         </div>
 
         {/* Button */}
         <button
-          onClick={() => navigate('/onboarding/app-info')}
+          onClick={() => navigate("/onboarding/app-info")}
           className="bg-[#9ab89c] h-[48px] w-[333px] rounded-[16px]"
         >
           <p className="font-['SF_Compact_Text:Semibold',sans-serif] leading-[22px] text-[#042b48] text-[17px]">
@@ -56,11 +56,6 @@ export function OnboardingWelcomeScreen() {
           <div className="absolute inset-0 bg-[rgba(255,255,255,0.07)] rounded-[50px]" />
           <div className="absolute inset-0 bg-[rgba(94,94,94,0.18)] mix-blend-color-dodge rounded-[50px]" />
         </div>
-      </div>
-
-      {/* Home Indicator */}
-      <div className="absolute left-0 bottom-0 w-full flex items-end justify-center pb-[7.86px]">
-        <div className="bg-white h-[4.913px] rounded-[100px] w-[141.48px]" />
       </div>
     </div>
   );

@@ -75,11 +75,6 @@ export function OnboardingLocationAccessScreen() {
           <div className="absolute inset-0 bg-[rgba(94,94,94,0.18)] mix-blend-color-dodge rounded-[50px]" />
         </div>
       </div>
-
-      {/* Home Indicator */}
-      <div className="absolute left-0 bottom-0 w-full flex items-end justify-center pb-[7.86px]">
-        <div className="bg-white h-[4.913px] rounded-[100px] w-[141.48px]" />
-      </div>
     </div>
   );
 }

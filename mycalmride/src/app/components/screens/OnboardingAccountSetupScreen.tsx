@@ -75,11 +75,6 @@ export function OnboardingAccountSetupScreen() {
           <div className="absolute bg-white left-0 rounded-[50px] size-[8px] top-0" />
         </div>
       </div>
-
-      {/* Home Indicator */}
-      <div className="absolute left-0 bottom-0 w-full flex items-end justify-center pb-[7.86px]">
-        {/* <div className="bg-white h-[4.913px] rounded-[100px] w-[141.48px]" /> */}
-      </div>
     </div>
   );
 }

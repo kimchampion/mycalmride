@@ -53,12 +53,12 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
       onClick={handleClose}
     >
       <div
-        className={`absolute bottom-0 left-0 right-0 bg-[#042b48] rounded-t-[20px] transition-transform duration-300 ease-out ${
+        className={`absolute bottom-0 left-0 right-0 bg-[#042b48] rounded-t-[20px] transition-transform duration-300 ease-out max-h-[90vh] overflow-y-auto ${
           isAnimating ? 'translate-y-0' : 'translate-y-full'
         }`}
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="p-6">
+        <div className="p-6 pt-8 safe-top">
           <div className="flex items-center justify-between mb-8">
             <button
               onClick={handleClose}
@@ -133,14 +133,9 @@ export function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
           </button>
 
           <p className="text-white/40 text-center text-[13px] font-['SF_Compact_Text:Regular',sans-serif] mt-8">
-            Signing out may lead to loss of unsynced data.
+            This is a demo app, data is not being stored. <br /> Calm Ride, version 1.x, All rights reserved
           </p>
 
-          <p className="text-white/40 text-center text-[11px] font-['SF_Compact_Text:Regular',sans-serif] mt-12 mb-4">
-            Calm Ride, version 1, All rights reserved
-          </p>
-
-          <div className="w-[134px] h-[5px] bg-white rounded-full mx-auto mt-4" />
         </div>
       </div>
     </div>

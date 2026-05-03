@@ -39,11 +39,6 @@ export function SplashScreen() {
           </g>
         </svg>
       </div>
-
-      {/* Home Indicator */}
-      <div className="absolute h-[33.405px] left-0 bottom-0 w-full flex items-end justify-center pb-[7.86px]">
-        <div className="bg-white h-[4.913px] rounded-[100px] w-[141.48px]" />
-      </div>
     </div>
   );
 }

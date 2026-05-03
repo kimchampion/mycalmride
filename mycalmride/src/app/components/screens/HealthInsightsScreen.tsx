@@ -72,8 +72,6 @@ export function HealthInsightsScreen() {
           Allow
         </button>
       </div>
-
-      {/*<div className="w-[134px] h-[5px] bg-white rounded-full mx-auto" /> */}
     </div>
   );
 }
