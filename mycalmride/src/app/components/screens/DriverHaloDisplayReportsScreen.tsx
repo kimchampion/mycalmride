@@ -119,7 +119,7 @@ export function DriverHaloDisplayReportsScreen() {
       </div>
 
       {/* End Session Button */}
-      <div className="absolute left-[17px] top-[724px] w-[360px] flex flex-col items-center justify-center min-h-[44px] py-[3px]">
+      <div className="absolute left-[17px] top-[624px] w-[360px] flex flex-col items-center justify-center min-h-[44px] py-[3px]">
         <button
           onClick={handleEndSession}
           className="bg-[#9ab89c] h-[48px] rounded-[16px] w-full"
