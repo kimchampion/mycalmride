@@ -16,38 +16,7 @@ export function OnboardingAllowLocationAccessScreen() {
 
   return (
     <div className="bg-[#042b48] relative min-h-screen w-full overflow-hidden">
-      {/* Status Bar */}
-      <div className="absolute flex flex-col h-[48.881px] items-start left-0 pt-[20.53px] top-0 w-full px-4">
-        <div className="flex items-center justify-between w-full">
-          <div className="flex-1">
-            <p className="font-['SF_Pro:Semibold',sans-serif] font-[590] leading-[21.507px] text-[16.62px] text-white whitespace-nowrap" style={{ fontVariationSettings: "'wdth' 100" }}>
-              9:41
-            </p>
-          </div>
-          <div className="h-[9.776px] w-[121.224px]" />
-          <div className="flex-1 flex items-center justify-end gap-[6.843px]">
-            <div className="h-[11.953px] w-[18.77px]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18.7702 11.9527">
-                <path clipRule="evenodd" d={svgPaths.paeb8c80} fill="white" fillRule="evenodd" />
-              </svg>
-            </div>
-            <div className="h-[12.052px] w-[16.758px]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 16.7579 12.0523">
-                <path clipRule="evenodd" d={svgPaths.p1aed50f0} fill="white" fillRule="evenodd" />
-              </svg>
-            </div>
-            <div className="h-[12.709px] w-[26.716px]">
-              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 26.7162 12.709">
-                <g>
-                  <rect height="11.7313" opacity="0.35" rx="3.71493" stroke="white" strokeWidth="0.977612" width="23.4627" x="0.488806" y="0.488806" />
-                  <path d={svgPaths.p3c9de380} fill="white" opacity="0.4" />
-                  <rect fill="white" height="8.79851" rx="2.44403" width="20.5299" x="1.95522" y="1.95522" />
-                </g>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
+    </div>
 
       {/* Content */}
       <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[329px] flex flex-col items-center pb-[44px]">
