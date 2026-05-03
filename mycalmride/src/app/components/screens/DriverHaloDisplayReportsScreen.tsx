@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import svgPaths from '../../../imports/DriverHaloDisplayReports/svg-dmk5nnt6nq';
-import haloImage from '../../../imports/halo_transparent_animated.png';
+import haloImage from '../../../assets/halo_transparent_animated.png';
 
 export function DriverHaloDisplayReportsScreen() {
   const navigate = useNavigate();
