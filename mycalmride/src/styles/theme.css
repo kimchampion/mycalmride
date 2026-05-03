@@ -124,8 +124,17 @@
     @apply border-border outline-ring/50;
   }
 
+  html {
+    background-color: #042B48;
+  }
+
   body {
     @apply bg-background text-foreground;
+    background-color: #042B48;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 
   /**
