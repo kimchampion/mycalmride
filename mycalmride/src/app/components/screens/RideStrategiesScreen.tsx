@@ -32,33 +32,34 @@ export function RideStrategiesScreen() {
   };
 
   return (
-    <div className="bg-[#042b48] min-h-screen w-full flex flex-col">
-      <div className="flex items-center justify-between p-4 pt-12">
-        <button
-          onClick={handleBack}
-          className="flex items-center gap-2 text-[#7DC4FF] text-[17px] font-['SF_Pro:Semibold',sans-serif]"
-        >
-          <ChevronLeft size={24} />
-          <span>Back</span>
-        </button>
-        <h1 className="text-white text-[17px] font-['SF_Pro:Semibold',sans-serif]">
-          Ride Strategies
-        </h1>
-        <button className="text-[#7DC4FF] text-[17px] font-['SF_Pro:Semibold',sans-serif]">
-          Save
-        </button>
-      </div>
+    <div className="bg-[#042b48] min-h-screen w-full flex justify-center">
+      <div className="w-full max-w-[393px]">
+        <div className="flex items-center justify-between p-4 pt-12">
+          <button
+            onClick={handleBack}
+            className="flex items-center gap-2 text-[#7DC4FF] text-[17px] font-['SF_Pro:Semibold',sans-serif]"
+          >
+            <ChevronLeft size={24} />
+            <span>Back</span>
+          </button>
+          <h1 className="text-white text-[17px] font-['SF_Pro:Semibold',sans-serif]">
+            Ride Strategies
+          </h1>
+          <button className="text-[#7DC4FF] text-[17px] font-['SF_Pro:Semibold',sans-serif]">
+            Save
+          </button>
+        </div>
 
-      <div className="px-4 pt-4">
-        <p className="font-['72:Bold',sans-serif] leading-[25px] text-[20px] text-white mb-1">
-          What helps you feel more in control?
-        </p>
-        <p className="font-['72:Regular',sans-serif] leading-[22px] text-[17px] text-[rgba(255,255,255,0.8)]">
-          Select all that apply. You can change these anytime.
-        </p>
-      </div>
+        <div className="px-4 pt-4">
+          <p className="font-['72:Bold',sans-serif] leading-[25px] text-[20px] text-white mb-1">
+            What helps you feel more in control?
+          </p>
+          <p className="font-['72:Regular',sans-serif] leading-[22px] text-[17px] text-[rgba(255,255,255,0.8)]">
+            Select all that apply. You can change these anytime.
+          </p>
+        </div>
 
-      <div className="px-4 mt-[25px] space-y-4">
+        <div className="px-4 mt-[25px] space-y-4">
         {/* Row 1 */}
         <div className="flex gap-[4px] flex-wrap">
           {strategies.slice(0, 3).map((strategy) => {
@@ -145,6 +146,7 @@ export function RideStrategiesScreen() {
             );
           })}
         </div>
+      </div>
       </div>
     </div>
   );

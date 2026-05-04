@@ -33,9 +33,10 @@ export function RideStrategiesSetupScreen() {
   };
 
   return (
-    <div className="bg-[#042b48] relative min-h-screen w-full overflow-hidden">
+    <div className="bg-[#042b48] relative min-h-screen w-full overflow-hidden flex justify-center">
+      <div className="w-full max-w-[393px]">
       {/* Status Bar */}
-      <div className="absolute left-0 top-0 w-full px-4">
+      <div className="absolute left-1/2 -translate-x-1/2 top-0 w-full max-w-[393px] px-4">
         <div className="flex flex-col h-[54px] items-start pt-[21px]">
           <div className="flex items-center justify-between w-full">
             <div className="flex-1">
@@ -85,7 +86,7 @@ export function RideStrategiesSetupScreen() {
       </div>
 
       {/* Header */}
-      <div className="absolute left-0 top-[98px] w-full px-4 pt-4">
+      <div className="absolute left-1/2 -translate-x-1/2 top-[98px] w-full max-w-[393px] px-4 pt-4">
         <p className="font-['72:Bold',sans-serif] leading-[25px] text-[20px] text-white mb-1">
           What helps you feel more in control?
         </p>
@@ -95,7 +96,7 @@ export function RideStrategiesSetupScreen() {
       </div>
 
       {/* Strategy Options */}
-      <div className="absolute left-0 top-[203px] w-full px-4 space-y-4">
+      <div className="absolute left-1/2 -translate-x-1/2 top-[203px] w-full max-w-[393px] px-4 space-y-4">
         {/* Row 1 */}
         <div className="flex gap-[4px] flex-wrap">
           {strategies.slice(0, 3).map((strategy) => {
@@ -182,6 +183,7 @@ export function RideStrategiesSetupScreen() {
             );
           })}
         </div>
+      </div>
       </div>
     </div>
   );

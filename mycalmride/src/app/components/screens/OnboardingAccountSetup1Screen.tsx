@@ -61,7 +61,7 @@ export function OnboardingAccountSetup1Screen() {
       </div>
 
       {/* Button */}
-      <div className="absolute left-[17px] top-[523px] w-[360px]">
+      <div className="absolute left-1/2 -translate-x-1/2 top-[523px] w-full max-w-[360px] px-4">
         <button
           onClick={handleSubmit}
           disabled={!email.trim() || !email.includes('@')}

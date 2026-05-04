@@ -32,9 +32,10 @@ export function OverviewScreen() {
 
   return (
     <>
-      <div className="bg-[#042b48] relative min-h-screen w-full overflow-hidden">
+      <div className="bg-[#042b48] relative min-h-screen w-full overflow-hidden flex justify-center">
+        <div className="w-full max-w-[393px]">
         {/* Status Bar */}
-        <div className="absolute left-0 top-0 w-full z-30">
+        <div className="absolute left-1/2 -translate-x-1/2 top-0 w-full max-w-[393px] z-30">
           <div className="flex flex-col h-[54px] items-start pt-[21px] px-4">
             <div className="flex items-center justify-between w-full">
               <div className="flex-1">
@@ -64,17 +65,17 @@ export function OverviewScreen() {
         </div>
 
         {/* Welcome Overlay */}
-        <div className="absolute h-[86.737px] leading-[0] left-[35.68px] text-white top-[106.46px] w-[289.348px] z-20">
-          <div className="-translate-y-1/2 absolute flex flex-col font-['SF_Pro_Text:Medium',sans-serif] justify-center left-[0.35px] text-[27px] top-[16px] tracking-[-1.08px] w-[288.995px]">
+        <div className="absolute h-[86.737px] leading-[0] left-1/2 -translate-x-1/2 text-white top-[106.46px] w-full max-w-[289.348px] px-4 z-20">
+          <div className="-translate-y-1/2 absolute flex flex-col font-['SF_Pro_Text:Medium',sans-serif] justify-center left-0 text-[27px] top-[16px] tracking-[-1.08px] w-full px-4">
             <p className="leading-[normal]">Hey there!</p>
           </div>
-          <div className="-translate-y-1/2 absolute flex flex-col font-['SF_Pro_Text:Bold',sans-serif] justify-center left-0 text-[44px] top-[60.24px] tracking-[-1.76px] w-[288.995px]">
+          <div className="-translate-y-1/2 absolute flex flex-col font-['SF_Pro_Text:Bold',sans-serif] justify-center left-0 text-[44px] top-[60.24px] tracking-[-1.76px] w-full px-4">
             <p className="leading-[normal] text-[#ffffff80]">Dublin, CA</p>
           </div>
         </div>
 
         {/* Map */}
-        <div className="absolute h-[348px] left-0 top-[112.03px] w-full max-w-[393px] z-10">
+        <div className="absolute h-[348px] left-1/2 -translate-x-1/2 top-[112.03px] w-full max-w-[393px] z-10">
           <div className="absolute h-[347.843px] left-[-63px] top-0 w-[521.765px]">
             <img alt="Map" className="absolute inset-0 max-w-none object-cover opacity-60 pointer-events-none size-full" src={imgMap} />
           </div>
@@ -151,7 +152,7 @@ export function OverviewScreen() {
         </div>
 
         {/* Content - "Are you ready to go?" */}
-        <div className="absolute flex flex-col gap-[13px] items-end left-[24px] top-[474.03px] w-[345px] z-20">
+        <div className="absolute flex flex-col gap-[13px] items-end left-1/2 -translate-x-1/2 top-[474.03px] w-full max-w-[345px] px-4 z-20">
           <p className="font-['SF_Pro_Text:Regular',sans-serif] leading-[22px] text-[24px] text-white w-full">Are you ready to go?</p>
 
           {/* Cell with traffic conditions and begin button */}
@@ -192,6 +193,7 @@ export function OverviewScreen() {
               </div>
             </button>
           </div>
+        </div>
         </div>
       </div>
 

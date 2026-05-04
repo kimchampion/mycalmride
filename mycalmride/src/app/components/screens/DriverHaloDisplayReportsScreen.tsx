@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import svgPaths from '../../../imports/DriverHaloDisplayReports/svg-dmk5nnt6nq';
-import haloImage from '../../../assets/halo_transparent_animated.png';
+import haloImage from '../../../imports/halo_transparent_animated.png';
 
 export function DriverHaloDisplayReportsScreen() {
   const navigate = useNavigate();
@@ -17,9 +17,10 @@ export function DriverHaloDisplayReportsScreen() {
   };
 
   return (
-    <div className="bg-[#042b48] relative min-h-screen w-full overflow-hidden">
+    <div className="bg-[#042b48] relative min-h-screen w-full overflow-hidden flex justify-center">
+      <div className="w-full max-w-[393px]">
       {/* Tabs */}
-      <div className="absolute left-0 top-[59.03px] w-full flex flex-col items-start">
+      <div className="absolute left-0 top-[59.03px] w-full flex flex-col items-start z-20">
         <div className="flex h-[60px] items-start w-full">
           {/* Navigation Tab */}
           <button
@@ -92,18 +93,13 @@ export function DriverHaloDisplayReportsScreen() {
         </div>
       </div>
 
-
-
-
-      
-
       {/* Bridge coming up text */}
-      <p className="absolute left-1/2 -translate-x-1/2 font-['SF_Compact_Text:Semibold',sans-serif] leading-[22px] text-[20px] text-center text-white top-[171.23px] w-[385.351px]">
+      <p className="absolute left-1/2 -translate-x-1/2 font-['SF_Compact_Text:Semibold',sans-serif] leading-[22px] text-[20px] text-center text-white top-[171.23px] w-full max-w-[385.351px] px-4">
         Bridge coming up
       </p>
 
       {/* Bridge Image */}
-      <div className="absolute h-[156.935px] left-[69px] top-[345.03px] w-[255.893px]">
+      <div className="absolute h-[156.935px] left-1/2 -translate-x-1/2 top-[345.03px] w-[255.893px]">
         <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 255.893 156.935">
           <g>
             <path d={svgPaths.p4987f00} fill="#7DC4FF" fillOpacity="0.3" />
@@ -119,7 +115,7 @@ export function DriverHaloDisplayReportsScreen() {
       </div>
 
       {/* End Session Button */}
-      <div className="absolute left-[17px] top-[600px] w-[360px] flex flex-col items-center justify-center min-h-[44px] py-[3px]">
+      <div className="absolute left-1/2 -translate-x-1/2 top-[624px] w-full max-w-[360px] px-4 flex flex-col items-center justify-center min-h-[44px] py-[3px]">
         <button
           onClick={handleEndSession}
           className="bg-[#9ab89c] h-[48px] rounded-[16px] w-full"
@@ -132,6 +128,7 @@ export function DriverHaloDisplayReportsScreen() {
             </div>
           </div>
         </button>
+      </div>
       </div>
     </div>
   );

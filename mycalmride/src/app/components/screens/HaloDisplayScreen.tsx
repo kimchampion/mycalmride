@@ -154,7 +154,7 @@ export function HaloDisplayScreen() {
       </div>
 
       {/* End Session Button */}
-      <div className="absolute left-[17px] top-[600px] w-[360px] flex flex-col items-center justify-center min-h-[44px] py-[3px] z-20">
+      <div className="absolute left-1/2 -translate-x-1/2 top-[624px] w-full max-w-[360px] px-4 flex flex-col items-center justify-center min-h-[44px] py-[3px] z-20">
         <button
           onClick={() => navigate('/overview')}
           className="bg-[#9ab89c] h-[48px] rounded-[16px] w-full"

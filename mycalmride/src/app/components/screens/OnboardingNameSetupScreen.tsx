@@ -97,7 +97,7 @@ export function OnboardingNameSetupScreen() {
       </p>
 
       {/* Button */}
-      <div className="absolute left-1/2 -translate-x-1/2 top-[513px] w-[360px]">
+      <div className="absolute left-1/2 -translate-x-1/2 top-[513px] w-full max-w-[360px] px-4">
         <button
           onClick={handleCreateAccount}
           disabled={!name.trim()}

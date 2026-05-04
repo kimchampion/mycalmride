@@ -95,7 +95,7 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/mycalmride/">
       <div className="size-full min-h-screen min-h-dvh overflow-hidden relative bg-[#042b48]">
         <AnimatedRoutes />
       </div>
